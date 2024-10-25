@@ -1,5 +1,10 @@
+"use client";
+import useClient from "@/app/hook/isClient";
+
 const Home = () => {
-  return <div>holssa</div>;
+  const isClient = useClient();
+
+  return isClient && <div>holssa</div>;
 };
 
 export default Home;
