@@ -12,14 +12,9 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
-    
   return (
     <html lang="en">
-      <body
-        className={`${monserrat.className} antialiased`}
-      >
-        {children}
-      </body>
+      <body className={`${monserrat.className} antialiased`}>{children}</body>
     </html>
   );
 }
